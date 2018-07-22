@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="AutoCollapseToDefinitions.e83ad587-0e19-4e07-a06a-eb1fa1e538de" Version="1.0" Language="en-US" Publisher="5P1K3" />
+        <DisplayName>AutoCollapseToDefinitions</DisplayName>
+        <Description xml:space="preserve">Open a .cs file and get all code collapsed to defintions</Description>
+        <Icon>CTDIcon.png</Icon>
+        <Tags>Collapse Autocollapse on open collapse to definitions collapsetodefinitions</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 16.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.ManagedDesktop.Core" Version="[15.6.27323.2,16.0)" DisplayName="Managed Desktop Workload Core" />
+    </Prerequisites>
+</PackageManifest>
